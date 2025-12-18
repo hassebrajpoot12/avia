@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIAPARK</title>
+    <!-- Swiper CSS -->
+     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <!-- Your CSS - fix path by removing space or using proper relative path -->
+    <link rel="stylesheet" href="./style css/style.css">
+    <!-- Font Awesome if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Your existing body content -->
+    <div class="header">
+        <nav>
+            <div class="icon-nav">
+                <div class="icon-nav-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="13.5" fill="none" viewBox="0 0 24 24" class="navigationBar__icon-yUreE"><path fill="currentColor" fill-rule="evenodd" d="M5 8h14v2H5V8Zm0 7h10v2H5v-2Z" clip-rule="evenodd"></path></svg>
+                </div>
+                <div class="icon-nav-2">
+                    <span>Menu</span>
+                </div>
+
+            </div>
+            <div class="head-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="425" height="63" viewBox="0 0 425 63" class="navigationBar__headerLogo-G1gdH"><path fill="currentColor" d="M11.345 62.688H.197v-5.785L21.571.689h14.167l21.293 55.387v6.612h-12.07l-4.864-13.143H16.122l-4.777 13.143zM36.41 38.303l-8.216-22.816-8.215 22.816H36.41zM77.15 62.69 56.361 7.303V.69h12.826l15.759 45.135L101.125.69h12.238v5.785l-21.04 56.213-15.174.001zm44.177 0v-62h13.915v61.998l-13.915.001zm33.028 0h-11.148v-5.786L164.581.69h14.167l21.293 55.387v6.612H187.97l-4.863-13.143h-23.975l-4.778 13.143zm25.065-24.386-8.216-22.816-8.214 22.816h16.43zm28.753 24.386v-62h20.203c7.377 0 13.258 1.847 17.645 5.537 4.388 3.694 6.58 8.653 6.58 14.88a21.753 21.753 0 0 1-1.507 7.937 18.792 18.792 0 0 1-4.57 6.82c-2.039 1.957-4.568 3.54-7.586 4.753-3.019 1.213-6.539 1.82-10.562 1.82h-6.288v20.251l-13.915.001zm13.663-31.66h6.456c3.186 0 5.714-.91 7.587-2.727 1.871-1.82 2.807-4.189 2.807-7.11 0-2.591-.908-4.753-2.724-6.49-1.816-1.735-4.372-2.604-7.67-2.604h-6.456V31.03zm41.412 31.66H252.1v-5.786L273.474.69h14.167l21.292 55.387v6.612h-12.069l-4.863-13.143h-23.976l-4.778 13.143zm25.067-24.386-8.217-22.816-8.214 22.816h16.431zM330.98 62.69h-13.914v-62h20.621c7.265 0 13.05 1.79 17.353 5.373 4.303 3.582 6.454 8.377 6.454 14.384 0 3.803-1.005 7.178-3.018 10.126-2.011 2.949-4.778 5.25-8.299 6.903L364.68 56.24v6.447h-11.988l-16.094-21.823h-5.618v21.824zm-.25-32.9h6.873c3.075 0 5.505-.84 7.293-2.522 1.789-1.68 2.683-3.898 2.683-6.655 0-2.37-.866-4.34-2.599-5.91-1.733-1.57-4.193-2.356-7.377-2.356h-6.874l.001 17.443zm57.421 5.952V62.69h-13.915v-62h13.915v26.619L410.868.689h10.982V6.89l-20.537 23.56 22.884 25.792v6.447h-12.239L388.151 35.74"></path></svg>
+              </div>
+            <div class="butt-nav">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="button__icon-J9wTK"><path fill="currentColor" fill-rule="evenodd" d="M12 2.6c2.511 0 4.872.977 6.647 2.753A9.338 9.338 0 0 1 21.401 12a9.34 9.34 0 0 1-2.754 6.647A9.34 9.34 0 0 1 12 21.401a9.339 9.339 0 0 1-6.647-2.754A9.34 9.34 0 0 1 2.599 12a9.34 9.34 0 0 1 2.754-6.647A9.339 9.339 0 0 1 12 2.599Zm4.586 13.178h2.777a8.222 8.222 0 0 0 .887-3.154h-3.24a15.81 15.81 0 0 1-.424 3.154Zm3.664-4.402a8.22 8.22 0 0 0-.926-3.228h-2.756c.248.995.401 2.085.443 3.228h3.24Zm-16.5 0a8.222 8.222 0 0 1 .926-3.228h2.756a15.762 15.762 0 0 0-.443 3.228H3.75Zm4.365 0a14.42 14.42 0 0 1 .48-3.228h2.794v3.228H8.115Zm4.496 0V8.148h2.794c.265.97.435 2.062.48 3.228H12.61Zm2.814 4.402c.254-.95.416-2.017.46-3.154H12.61v3.154h2.814Zm-4.036 0H8.575a14.473 14.473 0 0 1-.46-3.154h3.274v3.154Zm-3.975 0H4.637a8.222 8.222 0 0 1-.887-3.154h3.24c.04 1.115.187 2.179.424 3.154Zm7.223-11.622a8.29 8.29 0 0 1 3.918 2.795h-2.347c-.164-.46-.35-.89-.555-1.287a7.244 7.244 0 0 0-.957-1.43 6.103 6.103 0 0 0-.059-.078Zm.058 15.61a7.21 7.21 0 0 0 .958-1.43c.205-.396.391-.826.555-1.285h2.346a8.29 8.29 0 0 1-3.917 2.794l.058-.078Zm-5.33.079a8.29 8.29 0 0 1-3.919-2.794h2.346c.164.459.35.889.555 1.285.278.535.6 1.023.965 1.438l.053.071ZM9.31 4.227a7.236 7.236 0 0 0-.963 1.437c-.205.396-.391.827-.555 1.287H5.445a8.29 8.29 0 0 1 3.92-2.796 6.304 6.304 0 0 0-.055.072Zm3.3 2.724V4.074c.722.252 1.442.948 2.044 2.108.125.24.242.497.351.769h-2.394Zm2.395 10.1h-2.394v2.875c.721-.252 1.441-.948 2.043-2.108.125-.24.242-.497.351-.768Zm-5.659.767c.602 1.16 1.322 1.856 2.043 2.108V17.05H8.995c.11.27.226.527.351.767ZM8.995 6.951h2.394V4.074c-.721.252-1.441.948-2.043 2.108-.125.24-.242.497-.351.769Z" clip-rule="evenodd"></path></svg>Русский</button>
+            
+            </div>
+        </nav>
+    </div>
+    <div class="sub-header">
+        <div class="sub-header-1">
+            <div class="part-1">
+<button><img src="/project_img/clock-outlined-circle-98f2675f582b5c96935b.svg" alt=""> Today till 22:00</button>
+<button><img src="/project_img/map-outlined-circle-22d8ab1a7eda3982d582.svg" alt=""> Map</button>
+            </div>
+            <div class="part-1">
+<button> <img src="/project_img/navigation-outlined-circle-6d964252baf9ef24d76e.svg" alt="">How to get</button>
+<button><img src="/project_img/parking-outlined-circle-ae97c5e49afa83787e22.svg" alt="">Parking</button>
+            </div>
+        </div>
+    </div>
+    <section >
+      <div class="sec-1-padd">
+        <div class="sec-1-mrg">
+          <div class="button-strat">
+          <button class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="searchBar__icon-fDaem"><path fill="currentColor" fill-rule="evenodd" d="M15.717 16.943a7.22 7.22 0 0 1-4.383 1.472c-3.981 0-7.209-3.199-7.209-7.145 0-3.946 3.228-7.145 7.21-7.145 3.98 0 7.208 3.199 7.208 7.145a7.077 7.077 0 0 1-1.61 4.5l2.942 2.916-1.2 1.189-2.958-2.932Zm1.13-5.673c0 3.018-2.468 5.464-5.513 5.464s-5.513-2.446-5.513-5.464c0-3.018 2.468-5.464 5.513-5.464s5.513 2.446 5.513 5.464Z" clip-rule="evenodd"></path></svg>
+            <span>what do you want to find?</span>
+            </button>
+            <div class="page-width">
+            <form action="" class="show-form">
+            <img class="form-modifi form-search" src="/project_img/search-0af639b4dabb195bace4.svg" alt="">
+              <input  type="text"class="input-text">
+              
+              <input type="reset" value="&times;" class="form-modifi form-reset ">
+            </form>
+          </div>
+          </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1"><img src="/project_img/coccinelle_06_09_promo_eng.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/project_img/ap_tg_024_2620x920px.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/project_img/aviapark_27_08_2024_promo_eng-1.avif" alt=""></div>
+              
+              </div>
+              <div class="mini-slider">
+                <div class="mini-wrapper">
+              
+                  <h2>Coccinelle</h2>
+                  <button>More</button>
+                </div>
+              </div>
+              <div class="swiper-pagination haseeb-1"></div>
+             
+              </div>
+             
+
+        </div>
+      </div>
+    </section>
+ <div class="page-blur"></div>
+    <div class="section-2">
+      <div class="section-2-padd">
+        <div class="section-2-mrg">
+          <div class="section-2-2">
+            <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28" class="button__icon-J9wTK"><rect width="28" height="28" fill="url(#icon-bag-gradient-icon-a)" rx="6"></rect><path fill="#fff" d="M10.002 10.562H8.82L7.682 20.98h12.636L19.18 10.562h-.75v-1.77h.763c.915 0 1.683.676 1.78 1.568l1.142 10.447c.113 1.038-.717 1.943-1.78 1.943H7.664c-1.064 0-1.892-.905-1.78-1.942L7.026 10.36c.098-.893.866-1.57 1.78-1.57h1.2c.093-1.97 1.751-3.541 3.784-3.541 2.091 0 3.787 1.663 3.787 3.715v3.264H15.77v-1.667h-2.803v-1.77h2.796c-.09-.993-.94-1.771-1.974-1.771-1.095 0-1.982.87-1.982 1.944v3.264h-1.806v-1.667Z"></path><path fill="#fff" d="M11.808 12.229a.894.894 0 0 1-.903.886.894.894 0 0 1-.903-.886h1.806Zm5.769 0a.894.894 0 0 1-.903.886.894.894 0 0 1-.903-.886h1.806Z"></path><defs><linearGradient id="icon-bag-gradient-icon-a" x1="14" x2="14" y1="0" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#DB3B50"></stop><stop offset="1" stop-color="#C92A39"></stop></linearGradient></defs></svg>Shop</div>
+            <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" fill="none" viewBox="0 0 29 28" class="button__icon-J9wTK"><rect width="28" height="28" x="0.334" fill="url(#icon-food-gradient-icon-a)" rx="6"></rect><path fill="#fff" fill-rule="evenodd" d="M9.236 6.125a.882.882 0 0 0-.888-.875.882.882 0 0 0-.889.875v5.039c0 1.656 1.263 2.93 2.842 3.292v7.419c0 .483.398.875.888.875s.889-.392.889-.875V14.47c1.607-.343 2.903-1.629 2.903-3.306v-1.05a.864.864 0 0 0-.03-.227V6.125a.882.882 0 0 0-.889-.875.882.882 0 0 0-.888.875v4.152a.163.163 0 0 1-.07.014h-.82a.898.898 0 0 0-.179-.045.861.861 0 0 0-.027-.152V6.125a.882.882 0 0 0-.889-.875.882.882 0 0 0-.888.875v4.111h-.248a.898.898 0 0 0-.31.055h-.438a.162.162 0 0 1-.069-.014V6.125Zm2.456 5.861h-.974a1.941 1.941 0 0 1-.455.055h-.717c.336.444.925.769 1.674.769.748 0 1.337-.325 1.673-.77h-.746c-.153 0-.306-.018-.455-.054Zm5.756-5.861.41-.776a.9.9 0 0 0-.871.028.872.872 0 0 0-.427.748l-.007 15.543c0 .483.398.875.888.875s.889-.392.889-.875l.002-5.348 1.448-.74c.848-.435 1.429-1.268 1.429-2.228v-.296c0-2.89-.763-4.796-1.588-6.002a6.22 6.22 0 0 0-1.152-1.284 4.37 4.37 0 0 0-.541-.383 1.898 1.898 0 0 0-.044-.024l-.015-.008-.006-.004-.003-.001h-.002l-.41.775Zm1.513 7.902-.628.32.002-6.022c.554.929 1.097 2.422 1.097 4.731v.296c0 .235-.143.506-.471.675Z" clip-rule="evenodd"></path><defs><linearGradient id="icon-food-gradient-icon-a" x1="14.334" x2="14.334" y1="0" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#ABCC6D"></stop><stop offset="1" stop-color="#7CBB5A"></stop></linearGradient></defs></svg> Food</div>
+            <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28" class="button__icon-J9wTK"><rect width="28" height="28" fill="url(#icon-camera-gradient-a)" rx="6"></rect><path fill="#fff" fill-rule="evenodd" d="M6.363 8.96c0-2.049 1.637-3.71 3.656-3.71 1.193 0 2.252.58 2.92 1.477a3.223 3.223 0 0 1 2.247-.912c1.8 0 3.26 1.48 3.26 3.307 0 .689-.208 1.328-.563 1.858a2.496 2.496 0 0 1 1.829 2.417v.334l2.3-1.556a.865.865 0 0 1 .9-.045.89.89 0 0 1 .463.784v7.658a.89.89 0 0 1-.463.784.865.865 0 0 1-.9-.044l-2.3-1.557v.494c0 1.381-1.104 2.501-2.465 2.501H7.715c-1.362 0-2.465-1.12-2.465-2.501v-6.852c0-1.118.724-2.066 1.722-2.385a3.732 3.732 0 0 1-.61-2.052Zm3.656-1.932c-1.052 0-1.904.865-1.904 1.932s.852 1.933 1.904 1.933c1.051 0 1.904-.866 1.904-1.933 0-1.067-.853-1.932-1.904-1.932Zm5.167.564c-.832 0-1.507.685-1.507 1.53 0 .844.675 1.53 1.507 1.53a1.52 1.52 0 0 0 1.507-1.53c0-.845-.675-1.53-1.507-1.53Zm-8.184 5.805c0-.4.32-.723.713-.723h9.532c.393 0 .712.324.712.723v6.852c0 .4-.319.723-.712.723H7.715a.718.718 0 0 1-.713-.723v-6.852ZM19.8 15.808v1.87l1.823 1.233v-4.336L19.8 15.808Z" clip-rule="evenodd"></path><defs><linearGradient id="icon-camera-gradient-a" x1="14" x2="14" y1="0" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#F1C15C"></stop><stop offset="1" stop-color="#EDAC1A"></stop></linearGradient></defs></svg> Entertainment</div>
+            
+              <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28" class="button__icon-J9wTK"><rect width="28" height="28" fill="url(#icon-child-gradient-a)" rx="6"></rect><path fill="#fff" fill-rule="evenodd" d="M15.69 6.753a.795.795 0 0 0-.717-1.42l.353.713a67.643 67.643 0 0 0-.354-.713h-.001l-.002.002-.004.002-.01.005a1.428 1.428 0 0 0-.097.054 3.317 3.317 0 0 0-.816.73 3.68 3.68 0 0 0-.62 1.149 2.612 2.612 0 0 0-.925-.527 3.503 3.503 0 0 0-1.15-.173l-.025.001h-.013l-.001.001h-.001l.041.794-.042-.794a.796.796 0 0 0 .08 1.589h.033a2.054 2.054 0 0 1 .408.046c-2.699.79-4.76 3.015-5.169 5.778a2.122 2.122 0 0 0-1.408 2c0 .915.578 1.683 1.381 1.982C7.691 21.445 11.12 22.75 14 22.75s6.31-1.305 7.369-4.78a2.113 2.113 0 0 0 1.381-1.981c0-.922-.587-1.706-1.408-1.999-.472-3.19-3.146-5.662-6.46-6.038a2.14 2.14 0 0 1 .401-.831 1.731 1.731 0 0 1 .396-.362l.011-.006Zm-3.192 11.324.008.006a2.284 2.284 0 0 0 .354.192c.263.115.652.233 1.14.233.488 0 .877-.118 1.14-.233a2.27 2.27 0 0 0 .354-.192l.008-.006a.795.795 0 0 1 .98 1.253l-.493-.624.493.624-.002.002-.002.002-.006.004-.015.011-.043.032a3.872 3.872 0 0 1-.639.353 4.446 4.446 0 0 1-1.775.364c-.747 0-1.353-.18-1.775-.364a3.872 3.872 0 0 1-.639-.353 1.675 1.675 0 0 1-.044-.032l-.014-.011-.006-.005-.002-.001-.002-.001.493-.625-.494.624a.795.795 0 0 1 .981-1.253ZM14 9.493c-3.153 0-5.66 2.344-5.817 5.215l-.041.752h-.753l-.043-.001a.527.527 0 0 0-.013 1.053l.588.042.131.574c.64 2.806 3.303 4.031 5.948 4.031 2.645 0 5.308-1.225 5.948-4.03l.13-.575.588-.042a.527.527 0 0 0-.055-1.052h-.753l-.041-.752c-.157-2.87-2.664-5.215-5.817-5.215Zm1.948 5.13a.995.995 0 1 1 1.407 1.406.995.995 0 0 1-1.407-1.406Zm-5.303 0a.994.994 0 1 1 1.406 1.406.994.994 0 0 1-1.406-1.406Z" clip-rule="evenodd"></path><defs><linearGradient id="icon-child-gradient-a" x1="0" x2="29.796" y1="0" y2="2.063" gradientUnits="userSpaceOnUse"><stop stop-color="#E387AA"></stop><stop offset="1" stop-color="#DD5484"></stop></linearGradient></defs></svg>Kids</div>
+              <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" fill="none" viewBox="0 0 29 28" class="button__icon-J9wTK"><rect width="28" height="28" x="0.334" fill="url(#icon-services-gradient-paint0_linear_14896_24100)" rx="6"></rect><path fill="#fff" fill-rule="evenodd" d="m17.204 8.798 4.29-1.253V19.18l-4.522 1.292-5.1-1.28a.779.779 0 0 0-.405.008l-4.292 1.235V8.802l4.52-1.275 5.1 1.28a.78.78 0 0 0 .41-.009Zm5.88-1.446a1.463 1.463 0 0 0-1.838-1.426l-4.276 1.25L11.872 5.9a.78.78 0 0 0-.401.005L6.168 7.4a.81.81 0 0 0-.584.783v12.445a1.463 1.463 0 0 0 1.835 1.427l4.278-1.232 5.099 1.279a.78.78 0 0 0 .404-.007l5.303-1.516a.81.81 0 0 0 .581-.782V7.352ZM8.562 14.198a.656.656 0 0 1 .938 0 .684.684 0 0 1 0 .958.656.656 0 0 1-.938 0 .685.685 0 0 1 0-.958Zm10.606-1.354a.656.656 0 0 1 .938 0 .685.685 0 0 1 0 .958.656.656 0 0 1-.938 0 .684.684 0 0 1 0-.958Zm-9.28 4.063a.656.656 0 0 1 .937 0 .685.685 0 0 1 0 .957.656.656 0 0 1-.937 0 .685.685 0 0 1 0-.957Zm7.955-6.771a.656.656 0 0 1 .937 0 .685.685 0 0 1 0 .957.656.656 0 0 1-.938 0 .685.685 0 0 1 0-.957Zm-5.303 2.708a.656.656 0 0 1 .937 0 .684.684 0 0 1 0 .958.656.656 0 0 1-.938 0 .684.684 0 0 1 0-.958Zm2.651 1.354a.656.656 0 0 1 .937 0 .684.684 0 0 1 0 .958.656.656 0 0 1-.937 0 .685.685 0 0 1 0-.958Zm2.846 1.553c.248-.254.585-.397.937-.397.352 0 .689.143.938.397.248.254.388.598.388.957 0 .36-.14.704-.388.958a1.312 1.312 0 0 1-.938.396c-.352 0-.689-.142-.937-.396a1.369 1.369 0 0 1-.389-.958c0-.359.14-.703.389-.957Zm-9.28-5.417c.248-.254.585-.397.937-.397.351 0 .689.143.937.397a1.369 1.369 0 0 1 0 1.915 1.312 1.312 0 0 1-.937.397c-.352 0-.689-.143-.938-.397a1.369 1.369 0 0 1-.388-.958c0-.359.14-.703.388-.957Z" clip-rule="evenodd"></path><defs><linearGradient id="icon-services-gradient-paint0_linear_14896_24100" x1="14.334" x2="14.334" y1="0" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#73C6DC"></stop><stop offset="1" stop-color="#00A8D0"></stop></linearGradient></defs></svg>Services</div>
+              <div class="box box-modi"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" fill="none" viewBox="0 0 29 28" class="button__icon-J9wTK"><rect width="28" height="28" x="0.668" fill="#fff" rx="6"></rect><path fill="#171A24" fill-rule="evenodd" d="M7.76 14a6.907 6.907 0 0 1 6.908-6.908A6.907 6.907 0 0 1 21.576 14a6.907 6.907 0 0 1-6.908 6.908h-.652a1.037 1.037 0 0 1-1.037-1.036v-.653a3.53 3.53 0 0 0-3.53-3.53h-.653a1.037 1.037 0 0 1-1.036-1.037V14Zm6.908-8.75A8.75 8.75 0 0 0 5.918 14v.652a2.88 2.88 0 0 0 2.878 2.879h.653c.933 0 1.688.755 1.688 1.688v.653a2.88 2.88 0 0 0 2.879 2.878h.652a8.75 8.75 0 0 0 8.75-8.75 8.75 8.75 0 0 0-8.75-8.75Zm-1.575 3.26a1.305 1.305 0 1 1 1.845 1.846 1.305 1.305 0 0 1-1.845-1.846Zm-3.915 2.61a1.305 1.305 0 1 1 1.846 1.845 1.305 1.305 0 0 1-1.846-1.845Zm7.83-1.305a1.305 1.305 0 1 1 1.845 1.846 1.305 1.305 0 0 1-1.846-1.846Zm1.304 3.915a1.305 1.305 0 1 1 1.846 1.845 1.305 1.305 0 0 1-1.846-1.845Zm-2.61 3.914a1.305 1.305 0 1 1 1.846 1.845 1.305 1.305 0 0 1-1.845-1.845Z" clip-rule="evenodd"></path></svg>EMOJI camp</div>
+              </div>
+        </div>
+      </div>
+    </div>
+<div class="section-3">
+<div class="section-3-1">
+  <div class="section-3-2">
+<div class="section-3-2-1">
+  <div class="box-1">
+    <h2>Services</h2>
+    <a href="#">All services</a>
+  </div>
+  <div class="box-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" class="carousel__nextSlide-BB_uI"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="m21 12-5.736 5.736L21 23.472"></path><circle cx="18" cy="18" r="17" stroke="#8088A3" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="2" transform="rotate(90 18 18)"></circle></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" class=" carousel__prevSlide-xbzo6 x-svg"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="m21 12-5.736 5.736L21 23.472"></path><circle cx="18" cy="18" r="17" stroke="#8088A3" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="2" transform="rotate(90 18 18)"></circle></svg>
+   <div class="carousel__prevSlide-xbzo6"></div>
+<div class="carousel__nextSlide-BB_uI"></div>
+
+  </div>
+</div>
+<div class="swiper cardSwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="box-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" fill="none" viewBox="0 0 36 37">
+          <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+            <path d="M13.262 22.74a4.079 4.079 0 0 0-2.879-1.195A4.08 4.08 0 0 0 6.31 25.62a4.078 4.078 0 0 0 4.073 4.073 4.078 4.078 0 0 0 4.074-4.073 4.079 4.079 0 0 0-1.195-2.88Zm-1.452 4.306a2.023 2.023 0 0 1-1.427.592 2.023 2.023 0 0 1-2.02-2.019 2.023 2.023 0 0 1 2.02-2.02 2.022 2.022 0 0 1 2.02 2.02c-.001.535-.214 1.049-.593 1.427Z"/>
+            <path d="M20.552 25.62V23.6h4.038v4.17a4.081 4.081 0 0 0-3.047 3.942 4.078 4.078 0 0 0 4.075 4.074 4.08 4.08 0 0 0 3.941-3.047h5.198a1.027 1.027 0 1 0 0-2.053l-5.198-.001a4.085 4.085 0 0 0-2.915-2.915v-5.197c0-.57-.46-1.028-1.027-1.028h-5.066v-11.16c0-.568-.46-1.027-1.028-1.027H8.363V1.245A1.027 1.027 0 0 0 7.337.218H1.243a1.027 1.027 0 0 0 0 2.055H6.31v14.032C2.727 17.878.216 21.46.216 25.62c0 5.606 4.56 10.167 10.167 10.167 5.606 0 10.168-4.56 10.169-10.167Zm-2.055-14.208H8.364v4.25a9.97 9.97 0 0 1 2.019-.21c3.316 0 6.258 1.6 8.114 4.063v-8.103Zm0 14.207c0 4.473-3.641 8.113-8.114 8.113-4.473 0-8.113-3.64-8.113-8.113 0-4.473 3.64-8.114 8.113-8.114 4.473 0 8.114 3.64 8.114 8.114Zm8.547 7.52a2.022 2.022 0 0 1-1.427.593 2.023 2.023 0 0 1-2.02-2.019 2.023 2.023 0 0 1 2.02-2.02 2.022 2.022 0 0 1 2.02 2.02c-.002.535-.214 1.048-.593 1.426ZM27.418 7.1l2.28-6.779h-1.413l-1.543 4.546L25.199.321h-1.205l-1.576 4.524L20.906.32h-1.485l2.28 6.78h1.341l1.526-4.44 1.527 4.44h1.323ZM32.925.25c.52 0 1.003.087 1.445.264.437.174.828.447 1.142.798l.17.19-.96.925-.184-.192c-.421-.44-.94-.66-1.578-.66-.426 0-.803.095-1.138.28h-.002a2.01 2.01 0 0 0-.78.761c-.192.332-.29.709-.285 1.092v.003c0 .409.097.772.284 1.095.185.32.456.584.781.76l.002.002c.335.184.712.279 1.138.279.63 0 1.15-.221 1.578-.668l.184-.192.96.924-.17.19a3.06 3.06 0 0 1-1.145.802 3.82 3.82 0 0 1-1.452.27c-.669 0-1.28-.148-1.828-.448a3.33 3.33 0 0 1-1.292-1.24 3.415 3.415 0 0 1-.468-1.774c0-.65.154-1.244.468-1.773.31-.525.759-.954 1.297-1.241A3.783 3.783 0 0 1 32.925.25Z"/>
+          </svg>
+          <p class="serviceCard__description-TWpQA">Accessible Bathrooms</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" fill="none" viewBox="0 0 36 37">
+          <path d="M27.398 21.526a1.446 1.446 0 1 1-2.892 0 1.446 1.446 0 0 1 2.892 0Z" fill="currentColor"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.935 11.624c4.128-1.95 12.904-6.342 14.754-6.938a5.632 5.632 0 0 1 1.944-.261c.588.033 1.285.19 1.924.634.655.456 1.152 1.148 1.432 2.082v.003c.435 1.467.886 2.93 1.353 4.386 2.58.134 4.596 2.328 4.596 4.934v10.124c0 2.69-2.148 4.94-4.845 4.94H7.908c-2.697 0-4.848-2.248-4.848-4.94V16.464c0-2.358 1.652-4.377 3.875-4.84Zm5.833-.1 9.617-4.54.04-.013a3.21 3.21 0 0 1 .26-.072c.233-.053.524-.095.811-.078.285.016.515.086.69.208.158.11.36.323.503.798.366 1.236.743 2.468 1.132 3.697H12.768Zm-7.308 4.94c0-1.422 1.133-2.54 2.447-2.54h20.186c1.314 0 2.445 1.117 2.445 2.54v10.124c0 1.423-1.131 2.54-2.445 2.54H7.908c-1.316 0-2.448-1.118-2.448-2.54V16.464Z" fill="currentColor"/>
+        </svg>
+        <p>ATMs</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" fill="none" viewBox="0 0 36 37">
+          <path d="M27.398 21.526a1.446 1.446 0 1 1-2.892 0 1.446 1.446 0 0 1 2.892 0Z" fill="currentColor"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.935 11.624c4.128-1.95 12.904-6.342 14.754-6.938a5.632 5.632 0 0 1 1.944-.261c.588.033 1.285.19 1.924.634.655.456 1.152 1.148 1.432 2.082v.003c.435 1.467.886 2.93 1.353 4.386 2.58.134 4.596 2.328 4.596 4.934v10.124c0 2.69-2.148 4.94-4.845 4.94H7.908c-2.697 0-4.848-2.248-4.848-4.94V16.464c0-2.358 1.652-4.377 3.875-4.84Zm5.833-.1 9.617-4.54.04-.013a3.21 3.21 0 0 1 .26-.072c.233-.053.524-.095.811-.078.285.016.515.086.69.208.158.11.36.323.503.798.366 1.236.743 2.468 1.132 3.697H12.768Zm-7.308 4.94c0-1.422 1.133-2.54 2.447-2.54h20.186c1.314 0 2.445 1.117 2.445 2.54v10.124c0 1.423-1.131 2.54-2.445 2.54H7.908c-1.316 0-2.448-1.118-2.448-2.54V16.464Z" fill="currentColor"/>
+        </svg>
+        <p>ATMs</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box-2"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="none" viewBox="0 0 37 37">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.106 22.424h1.68l2.855-8.487-.284-.096v-.3H19.01l-2.083 6.135-2.083-6.135h-1.523l-2.127 6.105-2.04-6.105h-1.86l2.988 8.883h1.704l2.06-5.991 2.06 5.991ZM25.123 13.447c.684 0 1.318.114 1.897.347a3.955 3.955 0 0 1 1.494 1.043l.192.215-1.199 1.155-.208-.217c-.569-.594-1.271-.89-2.13-.89-.572 0-1.08.127-1.533.377h-.002c-.44.24-.805.595-1.055 1.029a2.88 2.88 0 0 0-.384 1.473v.004c0 .55.13 1.04.383 1.476.25.434.616.79 1.056 1.03h.002c.452.25.962.377 1.534.377.848 0 1.552-.299 2.129-.901l.208-.217 1.2 1.154-.194.216c-.412.46-.925.819-1.498 1.048a5.013 5.013 0 0 1-1.905.354c-.879 0-1.68-.194-2.399-.587a4.362 4.362 0 0 1-1.693-1.626c-.41-.693-.613-1.47-.613-2.324 0-.854.203-1.631.613-2.324a4.352 4.352 0 0 1 1.7-1.626c.722-.392 1.526-.586 2.405-.586Zm2.393 6.725-.012.012a3.165 3.165 0 0 1 .012-.012ZM25.17 14.8c.93 0 1.706.322 2.331.967l.015.015c-.628-.655-1.41-.982-2.346-.982Z" fill="currentColor"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.859 1.964a2.9 2.9 0 0 0-2.9 2.9V31.13a2.9 2.9 0 0 0 2.9 2.9h26.28a2.9 2.9 0 0 0 2.9-2.9V4.864a2.9 2.9 0 0 0-2.9-2.9H4.858Zm.11 2.21a.8.8 0 0 0-.8.8V31.02a.8.8 0 0 0 .8.8h26.06a.8.8 0 0 0 .8-.8V4.974a.8.8 0 0 0-.8-.8H4.968Z" fill="currentColor"/>
+      </svg>
+      <p>Bathrooms</p>
+    </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box-2 box-hid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" fill="none" viewBox="0 0 36 37">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.591 11.103c-1.82 0-3.343 1.524-3.343 3.412v8.567c0 1.89 1.523 3.413 3.344 3.413h20.053c1.822 0 3.345-1.522 3.345-3.413v-8.567c0-1.888-1.523-3.412-3.345-3.412H5.59ZM.048 14.515c0-3.07 2.476-5.612 5.543-5.612h20.054c2.784 0 5.08 2.09 5.482 4.771h4.22v10.25h-4.22c-.403 2.682-2.698 4.771-5.482 4.771H5.592c-3.067 0-5.544-2.539-5.544-5.613v-8.567Zm31.143 7.209h1.957v-5.85H31.19v5.85ZM6.845 24.067V13.456h2.2v10.61h-2.2Zm7.225 0V13.456h2.2v10.61h-2.2Zm7.223 0V13.456h2.2v10.61h-2.2Z" fill="currentColor"/>
+        </svg>
+        <p>Battery collection point</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box-2 box-hid-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37" fill="none">
+          <path d="M36.6509 22.7433C34.8105 22.3631 32.9343 22.1938 31.0571 22.2385C32.1363 19.4541 32.3593 16.0971 31.7082 12.2316C31.6941 12.149 31.6634 12.0702 31.6182 12.0002C31.573 11.9302 31.5141 11.8705 31.4453 11.8247C31.3764 11.7789 31.2991 11.748 31.2181 11.7341C31.1371 11.7201 31.0541 11.7232 30.9743 11.7434C28.9487 12.3242 27.0192 13.2098 25.2493 14.3708C24.0973 11.17 22.1264 8.34247 19.5413 6.18193C19.4253 6.09071 19.2806 6.04596 19.1345 6.0561C18.9884 6.06624 18.8509 6.13058 18.7481 6.23699C16.0888 8.99385 14.3109 11.8269 13.4403 14.6709C11.554 13.3642 9.47399 12.3758 7.27997 11.7434C7.20022 11.7234 7.11728 11.7203 7.03632 11.7344C6.95535 11.7484 6.87807 11.7793 6.80927 11.825C6.74047 11.8708 6.68162 11.9305 6.63635 12.0005C6.59109 12.0704 6.56038 12.1491 6.54613 12.2316C5.89592 16.0971 6.12075 19.4532 7.19724 22.2376C5.32002 22.1932 3.4438 22.3628 1.60347 22.7433C1.51947 22.7632 1.44067 22.8014 1.37249 22.8553C1.30431 22.9091 1.24836 22.9774 1.20846 23.0555C1.16857 23.1335 1.14568 23.2194 1.14137 23.3073C1.13706 23.3952 1.15143 23.483 1.18349 23.5646C3.78971 30.2164 8.86817 31.748 12.9943 31.748C15.0795 31.7345 17.1495 31.3845 19.1276 30.711C21.1052 31.3855 23.1745 31.737 25.261 31.7508C29.3861 31.7508 34.4655 30.2182 37.0717 23.5674C37.1041 23.4855 37.1187 23.3975 37.1145 23.3093C37.1103 23.2212 37.0874 23.135 37.0473 23.0567C37.0073 22.9785 36.9512 22.91 36.8827 22.8561C36.8143 22.8021 36.7352 22.763 36.6509 22.7433ZM29.7279 22.3046C27.533 22.4419 25.3904 23.0452 23.4371 24.0758C23.3322 24.1021 23.2364 24.1574 23.1602 24.2355C21.9465 24.9497 20.8878 25.9082 20.0485 27.0529C20.0755 25.9241 19.973 24.7953 19.7436 23.6913C20.4631 20.5875 22.313 17.9463 25.2592 15.8319C26.9138 14.6683 28.7246 13.7549 30.6353 13.12C31.1479 16.7156 30.8376 19.7983 29.7279 22.3046ZM19.2175 7.49244C20.2733 8.44688 23.0792 11.2625 24.2205 15.1004C21.9432 16.7335 20.1751 19.0014 19.1276 21.6328C18.1557 19.1725 16.5441 17.0296 14.4664 15.4354C15.1913 12.7832 16.7804 10.1153 19.2166 7.49428L19.2175 7.49244ZM7.62172 13.1172C9.6993 13.8065 11.6566 14.8278 13.4205 16.143C15.9524 17.9507 17.7601 20.6299 18.5116 23.6885C18.2821 24.7932 18.1795 25.9213 18.2058 27.0502C15.7776 23.7253 11.9169 22.5799 8.52553 22.3019C7.41667 19.7992 7.1073 16.7156 7.62172 13.119V13.1172ZM12.1687 30.5293C7.68107 30.2815 4.45881 28.0166 2.58283 23.7968C5.30057 23.3242 15.1014 22.2027 18.3344 29.6933C16.3417 30.3325 14.2559 30.6159 12.1687 30.5311V30.5293ZM26.0856 30.5293C23.9992 30.6137 21.9128 30.3302 19.9208 29.6914C23.1521 22.2027 32.9519 23.3251 35.6742 23.7968C33.7955 28.0166 30.575 30.2815 26.0856 30.5311V30.5293Z" fill="currentColor" stroke="currentColor" stroke-width="0.642403"/>
+        </svg>
+          <p>Beauty and body care</p>
+      </div>
+    </div>
+     <div class="swiper-slide">
+      <div class="box-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" fill="none" viewBox="0 0 36 37">
+          <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+            <path d="M13.262 22.74a4.079 4.079 0 0 0-2.879-1.195A4.08 4.08 0 0 0 6.31 25.62a4.078 4.078 0 0 0 4.073 4.073 4.078 4.078 0 0 0 4.074-4.073 4.079 4.079 0 0 0-1.195-2.88Zm-1.452 4.306a2.023 2.023 0 0 1-1.427.592 2.023 2.023 0 0 1-2.02-2.019 2.023 2.023 0 0 1 2.02-2.02 2.022 2.022 0 0 1 2.02 2.02c-.001.535-.214 1.049-.593 1.427Z"/>
+            <path d="M20.552 25.62V23.6h4.038v4.17a4.081 4.081 0 0 0-3.047 3.942 4.078 4.078 0 0 0 4.075 4.074 4.08 4.08 0 0 0 3.941-3.047h5.198a1.027 1.027 0 1 0 0-2.053l-5.198-.001a4.085 4.085 0 0 0-2.915-2.915v-5.197c0-.57-.46-1.028-1.027-1.028h-5.066v-11.16c0-.568-.46-1.027-1.028-1.027H8.363V1.245A1.027 1.027 0 0 0 7.337.218H1.243a1.027 1.027 0 0 0 0 2.055H6.31v14.032C2.727 17.878.216 21.46.216 25.62c0 5.606 4.56 10.167 10.167 10.167 5.606 0 10.168-4.56 10.169-10.167Zm-2.055-14.208H8.364v4.25a9.97 9.97 0 0 1 2.019-.21c3.316 0 6.258 1.6 8.114 4.063v-8.103Zm0 14.207c0 4.473-3.641 8.113-8.114 8.113-4.473 0-8.113-3.64-8.113-8.113 0-4.473 3.64-8.114 8.113-8.114 4.473 0 8.114 3.64 8.114 8.114Zm8.547 7.52a2.022 2.022 0 0 1-1.427.593 2.023 2.023 0 0 1-2.02-2.019 2.023 2.023 0 0 1 2.02-2.02 2.022 2.022 0 0 1 2.02 2.02c-.002.535-.214 1.048-.593 1.426ZM27.418 7.1l2.28-6.779h-1.413l-1.543 4.546L25.199.321h-1.205l-1.576 4.524L20.906.32h-1.485l2.28 6.78h1.341l1.526-4.44 1.527 4.44h1.323ZM32.925.25c.52 0 1.003.087 1.445.264.437.174.828.447 1.142.798l.17.19-.96.925-.184-.192c-.421-.44-.94-.66-1.578-.66-.426 0-.803.095-1.138.28h-.002a2.01 2.01 0 0 0-.78.761c-.192.332-.29.709-.285 1.092v.003c0 .409.097.772.284 1.095.185.32.456.584.781.76l.002.002c.335.184.712.279 1.138.279.63 0 1.15-.221 1.578-.668l.184-.192.96.924-.17.19a3.06 3.06 0 0 1-1.145.802 3.82 3.82 0 0 1-1.452.27c-.669 0-1.28-.148-1.828-.448a3.33 3.33 0 0 1-1.292-1.24 3.415 3.415 0 0 1-.468-1.774c0-.65.154-1.244.468-1.773.31-.525.759-.954 1.297-1.241A3.783 3.783 0 0 1 32.925.25Z"/>
+          </svg>
+          <p class="serviceCard__description-TWpQA">Accessible Bathrooms</p>
+      </div>
+    </div>
+     <div class="swiper-slide">
+      <div class="box-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" fill="none" viewBox="0 0 36 37">
+          <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+            <path d="M13.262 22.74a4.079 4.079 0 0 0-2.879-1.195A4.08 4.08 0 0 0 6.31 25.62a4.078 4.078 0 0 0 4.073 4.073 4.078 4.078 0 0 0 4.074-4.073 4.079 4.079 0 0 0-1.195-2.88Zm-1.452 4.306a2.023 2.023 0 0 1-1.427.592 2.023 2.023 0 0 1-2.02-2.019 2.023 2.023 0 0 1 2.02-2.02 2.022 2.022 0 0 1 2.02 2.02c-.001.535-.214 1.049-.593 1.427Z"/>
+            <path d="M20.552 25.62V23.6h4.038v4.17a4.081 4.081 0 0 0-3.047 3.942 4.078 4.078 0 0 0 4.075 4.074 4.08 4.08 0 0 0 3.941-3.047h5.198a1.027 1.027 0 1 0 0-2.053l-5.198-.001a4.085 4.085 0 0 0-2.915-2.915v-5.197c0-.57-.46-1.028-1.027-1.028h-5.066v-11.16c0-.568-.46-1.027-1.028-1.027H8.363V1.245A1.027 1.027 0 0 0 7.337.218H1.243a1.027 1.027 0 0 0 0 2.055H6.31v14.032C2.727 17.878.216 21.46.216 25.62c0 5.606 4.56 10.167 10.167 10.167 5.606 0 10.168-4.56 10.169-10.167Zm-2.055-14.208H8.364v4.25a9.97 9.97 0 0 1 2.019-.21c3.316 0 6.258 1.6 8.114 4.063v-8.103Zm0 14.207c0 4.473-3.641 8.113-8.114 8.113-4.473 0-8.113-3.64-8.113-8.113 0-4.473 3.64-8.114 8.113-8.114 4.473 0 8.114 3.64 8.114 8.114Zm8.547 7.52a2.022 2.022 0 0 1-1.427.593 2.023 2.023 0 0 1-2.02-2.019 2.023 2.023 0 0 1 2.02-2.02 2.022 2.022 0 0 1 2.02 2.02c-.002.535-.214 1.048-.593 1.426ZM27.418 7.1l2.28-6.779h-1.413l-1.543 4.546L25.199.321h-1.205l-1.576 4.524L20.906.32h-1.485l2.28 6.78h1.341l1.526-4.44 1.527 4.44h1.323ZM32.925.25c.52 0 1.003.087 1.445.264.437.174.828.447 1.142.798l.17.19-.96.925-.184-.192c-.421-.44-.94-.66-1.578-.66-.426 0-.803.095-1.138.28h-.002a2.01 2.01 0 0 0-.78.761c-.192.332-.29.709-.285 1.092v.003c0 .409.097.772.284 1.095.185.32.456.584.781.76l.002.002c.335.184.712.279 1.138.279.63 0 1.15-.221 1.578-.668l.184-.192.96.924-.17.19a3.06 3.06 0 0 1-1.145.802 3.82 3.82 0 0 1-1.452.27c-.669 0-1.28-.148-1.828-.448a3.33 3.33 0 0 1-1.292-1.24 3.415 3.415 0 0 1-.468-1.774c0-.65.154-1.244.468-1.773.31-.525.759-.954 1.297-1.241A3.783 3.783 0 0 1 32.925.25Z"/>
+          </svg>
+          <p class="serviceCard__description-TWpQA">Accessible Bathrooms</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-4">
+  <div class="card-padd">
+    <div class="card-mrg">
+      <div class="card-start">
+        <div class="box-1">
+          <h2>What's New</h2>
+          <a href="#">All offers and permotions</a>
+            </div>
+            <div class="box-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" class="carousel__nextSlide"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="m21 12-5.736 5.736L21 23.472"></path><circle cx="18" cy="18" r="17" stroke="#8088A3" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="2" transform="rotate(90 18 18)"></circle></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" class="carousel__prevSlide x-svg"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="m21 12-5.736 5.736L21 23.472"></path><circle cx="18" cy="18" r="17" stroke="#8088A3" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="2" transform="rotate(90 18 18)"></circle></svg>
+              <div class="carousel__nextSlide"></div>
+              <div class="carousel__prevSlide"></div>
+            </div>
+      </div>
+      <div class="swiper card-swiper-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-content yellow">
+              <img src="/project_img/department-event-cover-collection-1.webp" alt="">
+              <div class="event-title event-title-modife">
+                <div class="spa-1">
+                  <h3>YOU WANNA</h3>
+                   <p>The main denim of the season in YOU WANNA</p>
+               </div>
+               <div class="spa-2">
+                <span>from 19 Jul</span>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content yellow">
+              <img src="/project_img/department-event-cover-collection-1.webp" alt="">
+              <div class="event-title event-title-modife">
+                <div class="spa-1">
+                  <h3>YOU WANNA</h3>
+                   <p>The main denim of the season in YOU WANNA</p>
+               </div>
+               <div class="spa-2">
+                <span>from 19 Jul</span>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content yellow">
+              <img src="/project_img/department-event-cover-collection-2.webp" alt="">
+              <div class="event-title event-title-modi">
+                <div class="spa-1">
+                  <h3>Strellson</h3>
+                   <p>New collection in STRELLSON</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct </span>
+               </div>
+              </div>
+           
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content gree hide">
+              <img src="/project_img/department-event-cover-news-1.webp" alt="">
+              <div class="event-title">
+                <div class="spa-1">
+                  <h3>IRO</h3>
+                   <p>The French brand IRO presents a new Fall-Winter 2024 collection</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct</span>
+               </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content gree hid">
+              <img src="/project_img/department-event-cover-news-2.webp" alt="">
+              <div class="event-title event-title-modif ">
+                <div class="spa-1">
+                  <h3>AVIAPARK</h3>
+                  <p>Закрытие 8-го въезда</p>
+               </div>
+               <div class="spa-2">
+                <span>from 19 Jul</span>
+               </div>
+              </div>
+            </div>
+          </div>
+        <div class="swiper-slide">
+            <div class="card-content gree hide">
+              <img src="/project_img/department-event-cover-news-1.webp" alt="">
+              <div class="event-title">
+                <div class="spa-1">
+                  <h3>IRO</h3>
+                   <p>The French brand IRO presents a new Fall-Winter 2024 collection</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct</span>
+               </div>
+              </div>
+            
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card-content gree hide">
+              <img src="/project_img/department-event-cover-news-1.webp" alt="">
+              <div class="event-title">
+                <div class="spa-1">
+                  <h3>IRO</h3>
+                   <p>The French brand IRO presents a new Fall-Winter 2024 collection</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct</span>
+               </div>
+              </div>
+            
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card-content yellow">
+              <img src="/project_img/department-event-cover-collection-2.webp" alt="">
+              <div class="event-title event-title-modi">
+                <div class="spa-1">
+                  <h3>Strellson</h3>
+                   <p>New collection in STRELLSON</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct </span>
+               </div>
+              </div>
+           
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card-content yellow">
+              <img src="/project_img/department-event-cover-collection-2.webp" alt="">
+              <div class="event-title event-title-modi">
+                <div class="spa-1">
+                  <h3>Strellson</h3>
+                   <p>New collection in STRELLSON</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct </span>
+               </div>
+              </div>
+           
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card-content gree hide">
+              <img src="/project_img/department-event-cover-news-1.webp" alt="">
+              <div class="event-title">
+                <div class="spa-1">
+                  <h3>IRO</h3>
+                   <p>The French brand IRO presents a new Fall-Winter 2024 collection</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct</span>
+               </div>
+              </div>
+            
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card-content gree hide">
+              <img src="/project_img/department-event-cover-news-1.webp" alt="">
+              <div class="event-title">
+                <div class="spa-1">
+                  <h3>IRO</h3>
+                   <p>The French brand IRO presents a new Fall-Winter 2024 collection</p>
+               </div>
+               <div class="spa-2">
+                <span>from 12 Sep till 1 Oct</span>
+               </div>
+              </div>
+            
+            </div>
+          </div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="section-5">
+  <div class="section-wrap">
+    <div class="section-wrap-2">
+      <div class="pak-f">
+<h2>PARK-FREE</h2>
+<img src="./project_img/ParkFreeScan-67dfd73e257f4e350916 (1).jpg" alt="">
+<div class="AVI">
+<div class="para">
+  <p>just scan the receipt</p> 
+  <p>The best way to park for free at AVIAPARK</p>
+</div>
+  <button>Learn more</button>
+</div>
+      </div>
+      <div class="pak-f">
+<h2>Our Telegram</h2>
+<img src="/project_img/ParkFreeNews-a11eb82fd8ebf83fa1e7.jpg" alt="">
+<div class="AVI">
+  <div class="para">
+    <p>Indeed. Important. News.</p>
+    <p>Telegram channel from Nastya Murena, straight from the Aquarium.</p>
+  </div>
+    <button>Learn about the moray</button>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-6">
+<div class="wrap">
+  <div class="wrap-mrg">
+    <div class="conci">
+<div class="conci-head">
+<h2>AVIAPARK concierge</h2>
+<a href="#">More articles</a>
+</div>
+<div class="conci-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" class="carousel__next"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="m21 12-5.736 5.736L21 23.472"></path><circle cx="18" cy="18" r="17" stroke="#8088A3" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="2" transform="rotate(90 18 18)"></circle></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" class="carousel__prev x-svg"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="m21 12-5.736 5.736L21 23.472"></path><circle cx="18" cy="18" r="17" stroke="#8088A3" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="2" transform="rotate(90 18 18)"></circle></svg>
+
+ 
+
+  <div class="carousel__prev"></div>
+  <div class="carousel__next"></div>
+</div>
+    </div>
+    <div class="conci-para">
+      <p>Store reviews, news about returned brands, the life of the inhabitants of aquariums and what is hidden from view</p>
+    </div>
+    <div class="swiper card-Swiper-3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img-col cam ">
+            <img src="/project_img/scale_1200 (1).png" alt="">
+            <div class="conci-head-2">
+              <div class="box-4"></div>
+              <div class="conci-mrg">
+                Самые трендовые цвета этой осени
+              </div>
+              <div class="conci-fon">
+                1 неделю назад
+              </div>
+            </div>
+              </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-col kak">
+            <img src="/project_img/scale_1200.png" alt="">
+            <div class="conci-head-2">
+              <div class="box-4 pink"></div>
+              <div class="conci-mrg">
+                Как одеваться на свидание после 30
+              </div>
+              <div class="conci-fon">
+                2 недели назад
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-col oyb">
+            <img src="/project_img/scale_1200 (2).png" alt="">
+            <div class="conci-head-2">
+              <div class="box-4 blu"></div>
+              <div class="conci-mrg">
+             Обувь, которая сочетается с любым гардеробом
+              </div>
+              <div class="conci-fon">
+                3 недели назад
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-col cam ">
+            <img src="/project_img/scale_1200 (1).png" alt="">
+            <div class="conci-head-2">
+              <div class="box-4"></div>
+              <div class="conci-mrg">
+                Самые трендовые цвета этой осени
+              </div>
+              <div class="conci-fon">
+                1 неделю назад
+              </div>
+            </div>
+              </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-col kak">
+            <img src="/project_img/scale_1200.png" alt="">
+            <div class="conci-head-2">
+              <div class="box-4 pink"></div>
+              <div class="conci-mrg">
+                Как одеваться на свидание после 30
+              </div>
+              <div class="conci-fon">
+                2 недели назад
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-col oyb">
+            <img src="/project_img/scale_1200 (2).png" alt="">
+            <div class="conci-head-2">
+              <div class="box-4 blu"></div>
+              <div class="conci-mrg">
+             Обувь, которая сочетается с любым гардеробом
+              </div>
+              <div class="conci-fon">
+                3 недели назад
+              </div>
+            </div>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+     </div>
+</div>
+</div>
+<div class="section-7">
+  <div class="fis-wrp">
+    <div class="fis-mrg">
+      <div class="fis-box">
+        <h2>Aquarium in AVIAPARK</h2>
+        <div class="fis-box-1">
+          <video class="meetingPoint__meetingPointVideo-myb23 meetingPoint__meetingPoint__video-hGugV fish-video"  playsinline="" loop="">
+            <source src="https://cdn.aviapark.com/files/161896/fishes_1096x460.webm" type="video/webm">
+            <source src="https://cdn.aviapark.com/files/161896/fishes_1096x460.mp4" type="video/mp4"  ></video>
+        </div>
+        <div class="dive">
+          <div class="dive-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="button__icon-J9wTK"><path fill="currentColor" d="M22.395 11.88a9.105 9.105 0 0 0-2.333-3.163 9.307 9.307 0 0 0-3.469-1.91 4.307 4.307 0 0 0-1.022-1.491 4.401 4.401 0 0 0-1.552-.952 4.352 4.352 0 0 0-2.633 0 .726.726 0 0 0-.33.22.706.706 0 0 0-.163.357 3.245 3.245 0 0 0 0 .919c.058.383.186.752.377 1.09a10.168 10.168 0 0 0-3.88 2.529 4.213 4.213 0 0 0-2.074-1.553 4.352 4.352 0 0 0-2.633 0 .727.727 0 0 0-.363.221.706.706 0 0 0-.173.384 4.702 4.702 0 0 0 .87 3.349c.072.092.145.185.225.27a4.252 4.252 0 0 0-1.095 2.002 4.033 4.033 0 0 0 0 1.717.708.708 0 0 0 .486.534 4.352 4.352 0 0 0 2.632 0 4.202 4.202 0 0 0 2.14-1.652 11.334 11.334 0 0 0 2.502 1.538c-.263.462-.43.97-.494 1.496a4.36 4.36 0 0 0 0 .87.706.706 0 0 0 .16.371.726.726 0 0 0 .34.227c.43.136.877.205 1.328.206.444 0 .884-.07 1.305-.206a4.326 4.326 0 0 0 2.437-2.137 10.642 10.642 0 0 0 4.175-1.5 10.438 10.438 0 0 0 3.172-3.06.705.705 0 0 0 .065-.676ZM12.3 5.646c.431-.07.873-.031 1.286.112.412.143.78.387 1.07.708h-.144a9.152 9.152 0 0 0-1.792.1 1.823 1.823 0 0 1-.42-.92Zm4.235 9.674a5.15 5.15 0 0 1-.609-3.07c.087-.66.304-1.296.638-1.873a.704.704 0 0 0 .072-.543.717.717 0 0 0-.34-.433.74.74 0 0 0-.553-.07.726.726 0 0 0-.44.333 6.258 6.258 0 0 0-.828 2.415 6.43 6.43 0 0 0 .603 3.562 9.09 9.09 0 0 1-.653.064.732.732 0 0 0-.424.178.71.71 0 0 0-.229.392 2.889 2.889 0 0 1-1.683 1.603c-.396.133-.819.17-1.232.107v-.064a2.829 2.829 0 0 1 .718-1.482.708.708 0 0 0 .084-.789.715.715 0 0 0-.179-.216.537.537 0 0 0-.094-.042.632.632 0 0 0-.246-.157 9.097 9.097 0 0 1-3.351-2.137.727.727 0 0 0-.677-.209.73.73 0 0 0-.534.458 2.9 2.9 0 0 1-.676 1.035 2.964 2.964 0 0 1-1.05.668 2.686 2.686 0 0 1-1.291.1 2.507 2.507 0 0 1 .058-.713 2.89 2.89 0 0 1 1.167-1.71.714.714 0 0 0 .262-.562.702.702 0 0 0-.29-.577 2.723 2.723 0 0 1-.58-.57 3.166 3.166 0 0 1-.58-1.845c.41-.048.828.001 1.217.142.395.147.753.374 1.051.668.298.294.528.646.676 1.035.045.122.124.23.227.312a.732.732 0 0 0 .36.15.738.738 0 0 0 .725-.299c.094-.178 2.451-3.483 6.622-3.29a7.788 7.788 0 0 1 3.806 1.248 7.601 7.601 0 0 1 2.648 2.962 9.22 9.22 0 0 1-4.402 3.22h.007Z"></path></svg>
+          </div>
+Dive in
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-8">
+<div class="foot-wrp">
+  <div class="foot-mrg">
+    <svg xmlns="http://www.w3.org/2000/svg" width="144" height="20" viewBox="0 0 425 63"><path fill="currentColor" d="M11.345 62.688H.197v-5.785L21.571.689h14.167l21.293 55.387v6.612h-12.07l-4.864-13.143H16.122l-4.777 13.143zM36.41 38.303l-8.216-22.816-8.215 22.816H36.41zM77.15 62.69 56.361 7.303V.69h12.826l15.759 45.135L101.125.69h12.238v5.785l-21.04 56.213-15.174.001zm44.177 0v-62h13.915v61.998l-13.915.001zm33.028 0h-11.148v-5.786L164.581.69h14.167l21.293 55.387v6.612H187.97l-4.863-13.143h-23.975l-4.778 13.143zm25.065-24.386-8.216-22.816-8.214 22.816h16.43zm28.753 24.386v-62h20.203c7.377 0 13.258 1.847 17.645 5.537 4.388 3.694 6.58 8.653 6.58 14.88a21.753 21.753 0 0 1-1.507 7.937 18.792 18.792 0 0 1-4.57 6.82c-2.039 1.957-4.568 3.54-7.586 4.753-3.019 1.213-6.539 1.82-10.562 1.82h-6.288v20.251l-13.915.001zm13.663-31.66h6.456c3.186 0 5.714-.91 7.587-2.727 1.871-1.82 2.807-4.189 2.807-7.11 0-2.591-.908-4.753-2.724-6.49-1.816-1.735-4.372-2.604-7.67-2.604h-6.456V31.03zm41.412 31.66H252.1v-5.786L273.474.69h14.167l21.292 55.387v6.612h-12.069l-4.863-13.143h-23.976l-4.778 13.143zm25.067-24.386-8.217-22.816-8.214 22.816h16.431zM330.98 62.69h-13.914v-62h20.621c7.265 0 13.05 1.79 17.353 5.373 4.303 3.582 6.454 8.377 6.454 14.384 0 3.803-1.005 7.178-3.018 10.126-2.011 2.949-4.778 5.25-8.299 6.903L364.68 56.24v6.447h-11.988l-16.094-21.823h-5.618v21.824zm-.25-32.9h6.873c3.075 0 5.505-.84 7.293-2.522 1.789-1.68 2.683-3.898 2.683-6.655 0-2.37-.866-4.34-2.599-5.91-1.733-1.57-4.193-2.356-7.377-2.356h-6.874l.001 17.443zm57.421 5.952V62.69h-13.915v-62h13.915v26.619L410.868.689h10.982V6.89l-20.537 23.56 22.884 25.792v6.447h-12.239L388.151 35.74"></path></svg>
+  <div class="foot-mos">
+    <div class="foot-loc">
+<div class="loc-ico-1">
+      <div class="loc-ico">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g filter="url(#map-point-a)"><path fill="currentColor" fill-rule="evenodd" d="M18.494 8.864c0 3.29-2.447 6.01-5.62 6.436v6.33h-1.747V15.3A6.495 6.495 0 0 1 12 2.37a6.494 6.494 0 0 1 6.494 6.494ZM12 13.832a4.968 4.968 0 0 0 4.585-6.885C15.94 5.76 15.437 5.26 14.392 4.51A4.968 4.968 0 1 0 12 13.832Z" clip-rule="evenodd"></path></g><defs><filter id="map-point-a" width="12.988" height="21.471" x="5.506" y="2.37" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="2.211"></feOffset><feGaussianBlur stdDeviation="2.211"></feGaussianBlur><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></feComposite><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0"></feColorMatrix><feBlend in2="shape" result="effect1_innerShadow_146_17608"></feBlend></filter></defs></svg>
+    </div>
+      <p>Moscow, <br> Khodynsky boulevard, 4</p>
+    </div>
+      <div class="foot-pho">
+        <div class="pho-ico">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M6.347 3.736a1.8 1.8 0 0 1 2.589.413l1.97 2.877a1.812 1.812 0 0 1-.335 2.415l-1.579 1.316c.102 2.248 1.907 4.098 4.184 4.267a.09.09 0 0 0 .074-.03l1.411-1.707a1.661 1.661 0 0 1 2.27-.277l2.97 2.2a1.82 1.82 0 0 1 .252 2.696c-.396.428-.881.952-1.71 1.828-.517.548-1.278.812-2.093.885-.824.073-1.773-.042-2.766-.324-1.987-.564-4.24-1.82-6.177-3.779-1.942-1.964-3.145-4.272-3.693-6.26-.273-.993-.389-1.929-.338-2.718.049-.762.263-1.511.784-1.974a41.506 41.506 0 0 1 2.187-1.828ZM7.853 4.89a.488.488 0 0 0-.7-.118 40.2 40.2 0 0 0-2.121 1.773c-.136.12-.306.443-.347 1.077-.039.608.05 1.394.295 2.286.49 1.78 1.582 3.888 3.36 5.686 1.784 1.803 3.841 2.94 5.603 3.439.881.25 1.666.334 2.29.279.635-.056 1.039-.248 1.257-.48.824-.87 1.306-1.39 1.699-1.816a.508.508 0 0 0-.07-.752l-2.97-2.2a.35.35 0 0 0-.477.059l-1.41 1.707c-.29.35-.735.535-1.183.502-3.016-.223-5.403-2.738-5.403-5.776 0-.26.115-.506.315-.673l1.74-1.45a.5.5 0 0 0 .092-.666L7.853 4.89Z" clip-rule="evenodd"></path></svg>
+        </div>
+        <strong>+7(495) 644-45-44</strong>
+      </div>
+    </div>
+    <div class="foot-soical-ico">
+      <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g clip-path="url(#icon-vk-a)"><path fill="currentColor" fill-rule="evenodd" d="M4.588 4.588C3.375 5.8 3.375 7.752 3.375 11.655v.69c0 3.903 0 5.855 1.213 7.067 1.212 1.213 3.164 1.213 7.067 1.213h.69c3.903 0 5.855 0 7.067-1.213 1.213-1.212 1.213-3.164 1.213-7.067v-.69c0-3.903 0-5.855-1.213-7.067-1.212-1.213-3.164-1.213-7.067-1.213h-.69c-3.903 0-5.855 0-7.067 1.213Zm1.698 4.034c.093 4.485 2.336 7.18 6.268 7.18h.222v-2.566c1.445.144 2.537 1.2 2.976 2.566h2.041c-.56-2.041-2.034-3.17-2.954-3.6.92-.533 2.214-1.826 2.523-3.58h-1.855c-.402 1.423-1.595 2.717-2.73 2.839v-2.84h-1.855v4.975c-1.15-.288-2.602-1.682-2.667-4.974H6.286Z" clip-rule="evenodd"></path></g><defs><clipPath id="icon-vk-a"><path fill="#fff" d="M3.375 3.375h17.25v17.25H3.375z"></path></clipPath></defs></svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19.735 5.484c.854.23 1.524.9 1.751 1.75.413 1.544.413 4.766.413 4.766s0 3.222-.413 4.765c-.23.854-.9 1.524-1.751 1.751-1.543.413-7.735.413-7.735.413s-6.189 0-7.735-.413a2.483 2.483 0 0 1-1.751-1.75C2.101 15.221 2.101 12 2.101 12s0-3.222.413-4.765c.23-.854.9-1.524 1.751-1.751C5.811 5.07 12 5.07 12 5.07s6.192 0 7.735.413ZM15.165 12l-5.143 2.97V9.03L15.165 12Z" clip-rule="evenodd"></path></svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M19.407 4.32s1.736-.677 1.591.967c-.048.677-.482 3.046-.82 5.608l-1.157 7.59s-.096 1.112-.964 1.305c-.868.194-2.17-.677-2.41-.87-.194-.145-3.617-2.32-4.822-3.384-.338-.29-.723-.87.048-1.547l5.063-4.835c.578-.58 1.157-1.933-1.254-.29l-6.75 4.593s-.771.483-2.218.048L2.58 12.54s-1.157-.726.82-1.45c4.82-2.275 10.752-4.595 16.007-6.77Z"></path></svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M13.62 13.617c-1.318 1.362-1.414 3.058-1.528 6.775 3.464 0 5.856-.013 7.091-1.211 1.198-1.235 1.21-3.741 1.21-7.091-3.716.12-5.414.21-6.773 1.528ZM3.608 12.09c0 3.35.013 5.856 1.211 7.091 1.236 1.198 3.628 1.211 7.091 1.211-.12-3.717-.21-5.412-1.527-6.774-1.362-1.319-3.058-1.415-6.775-1.528Zm8.302-8.482c-3.457 0-5.856.01-7.09 1.211-1.2 1.236-1.212 3.739-1.212 7.091 3.717-.12 5.413-.21 6.775-1.53 1.318-1.36 1.414-3.055 1.527-6.772Zm1.71 6.772c-1.319-1.36-1.415-3.055-1.528-6.772 3.463 0 5.855.01 7.09 1.211 1.199 1.235 1.21 3.739 1.21 7.091-3.715-.12-5.413-.21-6.773-1.53" clip-rule="evenodd"></path></svg></li>
+      </ul>
+      
+          </div>
+  </div>
+  </div>
+</div>
+</div>
+  <div class="section-9">
+    <div class="time-wrp">
+      <div class="sec-mrg">
+   <div class="footer-content">Opening hours</div>
+<div class="week-secti">
+  <div class="statrt-tim-week">
+<span>
+<div class="tim-wee">
+  <div class="week">Sun</div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+ </div>
+</span>
+
+<span>
+  <div class="tim-wee">
+  <div class="week">
+    Mon
+  </div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+</div>
+</span>
+
+<span>
+  <div class="tim-wee">
+  <div class="week">
+    Tue
+  </div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+  </div>
+</span>
+
+<span>
+  <div class="tim-wee">
+  <div class="week">Wed</div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+</div>
+</span>
+
+<span>
+  <div class="tim-wee">
+  <div class="week">Thu</div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+  </div>
+</span>
+
+<span>
+  <div class="tim-wee">
+  <div class="week">Fri</div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+  </div>
+</span>
+
+<span>
+  <div class="tim-wee">
+  <div class="week">Sat</div>
+  <div class="time">
+    10.00
+    <br>
+    22.00
+  </div>
+</div>
+</span>
+</div>
+<div class="list-cont">
+  <div class="cont">
+    <a href="#">Contacts</a>
+    <a href="#">Feedback</a>
+    <a href="#">For tenants</a>
+  </div>
+  <div class="cont">
+    <a href="#">Advertising</a>
+    <a href="#">Career in Aviapark</a>
+    <a href="#">Procurement</a>
+  </div>
+
+  <div class="cont">
+    <a href="#">Terms and rules</a>
+    <a href="#">About AVIAPARK</a>
+  </div>
+</div>
+
+</div>
+      </div>
+      <button class="foot-btn" onclick="document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="pageUpButton__buttonIcon-OGBJ2">
+          <path fill="currentColor" d="M7.003 14.747 12 9.753l4.997 4.994L18 13.25l-6-5.997-6 5.997 1.003 1.497Z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  // Initialize all your Swiper instances properly
+  var swiper1 = new Swiper(".mySwiper", {
+    spaceBetween: 60,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false, // This is already correct
+      pauseOnMouseEnter: false     // Add this to prevent pausing on mouse enter
+    },
+    pagination: {
+      el: ".swiper-pagination-1",
+      clickable: true,
+    },
+  });
+
+  var swiper2 = new Swiper(".card-Swiper-3", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination-2",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".carousel__next",
+      prevEl: ".carousel__prev",
+    },
+    breakpoints: {
+      640: {
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+
+  var swiper3 = new Swiper(".card-swiper-2", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination-3",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".carousel__nextSlide",
+      prevEl: ".carousel__prevSlide",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    }
+  });3
+var swiper4 = new Swiper(".cardSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination-1",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".carousel__nextSlide-BB_uI",
+    prevEl: ".carousel__prevSlide-xbzo6",
+  },
+});
+
+
+  // --- Search Bar Logic ---
+  var btnsearch = document.querySelector(".search");
+  var formshow = document.querySelector(".show-form");
+  var blur = document.querySelector(".page-blur");
+  var body = document.body;
+  var auto = document.querySelector(".input-text");
+  
+  var colorsec = document.querySelectorAll(".week");
+  var daychange = document.querySelectorAll(".tim-wee");
+  
+  function dayShow() {
+    const d = new Date();
+    const currentDay = d.getDay();
+    daychange[currentDay].classList.add("week-show");
+  }
+  
+  function colorShow() {
+    const c = new Date();
+    const currentcolor = c.getDay();
+    colorsec[currentcolor].classList.add("color-show");
+  }
+
+  window.addEventListener("load", dayShow);
+  window.addEventListener("load", colorShow);
+
+  function show() {
+    formshow.classList.toggle("show");
+    btnsearch.classList.toggle("hidden");
+    blur.classList.toggle("blurshow");
+    body.style.overflow = "hidden";
+  }
+  
+  function windoclick(event) {
+    if (!formshow.contains(event.target) && !btnsearch.contains(event.target)) {
+      formshow.classList.remove("show");
+      btnsearch.classList.remove("hidden");
+      blur.classList.remove("blurshow");
+      body.style.overflow = "auto";
+    }
+  }
+
+  function auto1() {
+    if (auto) {
+      auto.focus();
+    }                                                
+  }
+  
+  // Fix event listeners
+  if (btnsearch) {
+    btnsearch.addEventListener("click", show);
+  }
+  window.addEventListener("click", windoclick);
+</script>
+</body>
+</html>
